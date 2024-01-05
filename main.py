@@ -45,10 +45,10 @@ def run():
             st.warning('Attach more than one PDF!... plis')
         else:
             merge_pdfs(output_pdf, attached_pdfs)
-            st.success('Here you can download the final pdf')
+            st.success('Now you can download your PDF!')
             with open(output_pdf, 'rb') as file:
                 pdf_data = file.read()
-            st.download_button(label='Download final pdf', data=pdf_data, file_name='final_pdf.pdf')
+            st.download_button(label='Download final PDF🔭', data=pdf_data, file_name='final_pdf.pdf')
 
 
 if __name__ == "__main__":
