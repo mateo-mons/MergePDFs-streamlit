@@ -31,7 +31,7 @@ def run():
     st.header('Merge PDFs!')
     st.image('assets/pdf_merge.jpeg')
     st.subheader('Attach PDFs')
-    attached_pdfs = st.file_uploader(label="", accept_multiple_files=True)
+    attached_pdfs = st.file_uploader(label="🕸", accept_multiple_files=True)
 
     merge = st.button(label="Merge 🕸") # Crea un boton para unir los pdfs #
 
