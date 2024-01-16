@@ -7,7 +7,7 @@ LOGGER = get_logger(__name__)
 
 # -- VARIABLES -- #
 
-output_pdf = "documents/final-pdf.pdf" # Define el nombre del archivo de salida que se guardará en pdf final
+output_pdf = "documents/final_pdf.pdf" # Define el nombre del archivo de salida que se guardará en pdf final
 
 # -- FUNCTIONS -- #
 
@@ -42,7 +42,7 @@ def run():
         if len(attached_pdfs) == 0:
             st.warning('Attach PDFs!')
         elif len(attached_pdfs) <= 1:
-            st.warning('Attach more than one PDF!... plis')
+            st.warning('Attach more than one PDF!')
         else:
             merge_pdfs(output_pdf, attached_pdfs)
             st.success('Now you can download your PDF!')
