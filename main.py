@@ -21,7 +21,7 @@ def merge_pdfs(output_path, documents):
     for document in documents:
         final_pdf.append(document) # Agrega cada documento PDF a la fusion
 
-    final_pdf.write(output_path) # Guarda el PDF combinado en la ruta de salida
+        final_pdf.write(output_path) # Guarda el PDF combinado en la ruta de salida
 
 
 
